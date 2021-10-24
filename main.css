@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+    padding: 5%;
+}
+
+.form {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+input[type=text], input[type=password], input[type=submit] {
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+    padding: 20px;
+}
+
+input:focus {
+    box-shadow: 0 0 10px blueviolet;
+}
+
+.firstName, .secondName, .email, .password, .signUp, .signIn {
+    border: 1px solid aquamarine;
+}
+
+input[type=submit] {
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    padding: 0px;
+}
+
+input[type=submit]:disabled {
+    background-color: rgb(111, 111, 250);
+    color: rgb(179, 178, 178);
+}
+
+.block1, .block2, .block3, .block4, .block5, .block6 {
+    position: relative;
+    height: 75px;
+}
+
+.prompt1, .prompt2, .prompt3, .prompt4, .prompt5 {
+    min-width: 200px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    box-shadow: 0 0 5px red;
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.success-blok {
+    width: 400px;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.signInNow, .signUpNow {
+    align-self: start;
+    text-decoration: none;
+}
+
+.profile {
+    width: 350px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.foto {
+    width: 100px;
+    height: 100px;
+}
+
+.profileSignUp {
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+    background-color: rgb(111, 111, 250);
+    color: rgb(179, 178, 178);
+    font-size: 18px;
+}
+
+.valid {
+    background-image: url(./image/check.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    border: 1px solid blue;
+}
+
+.invalid {
+    background-image: url(./image/cross-svgrepo-com.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-x: 96%;
+    background-position-y: 50%;
+    border: 1px solid red;
+}
+
+.hide {
+    display: none;
+}

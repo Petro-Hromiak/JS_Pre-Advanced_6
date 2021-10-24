@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My forms</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form class="form ">
+        <p>Please sign up</p>
+        <div class="block1">
+            <input type="text" class="firstName" placeholder="First name">
+            <span class="prompt1  hide">Please provide a valid First name.</span>
+        </div>
+        <div class="block2">
+            <input type="text" class="secondName" placeholder="Second name">
+            <span class="prompt2 hide">Please provide a valid Second name.</span>
+
+        </div>
+        <div class="block3">
+            <input type="text" class="email" placeholder="Email address">
+            <span class="prompt3 hide">Please provide a valid Email address.</span>
+
+        </div>
+        <div class="block4">
+            <input type="password" class="password" placeholder="Password">
+            <span class="prompt4  hide">Please provide a valid Password.</span>
+        </div>
+        <input type="submit" class="signUp" value="Sign up" disabled>
+        <a href="#" class="signInNow">Sign in now</a>
+
+    </form>
+    <div class="success-blok hide">
+        <p>Please sign in</p>
+        <div class="block5">
+            <input type="text" class="profileEmail" placeholder="Email address">
+        </div>
+        <div class="block6">
+            <input type="password" class="profilePassword" placeholder="Password">
+            <span class="prompt5  hide">Wrong email or password. Try again.</span>
+        </div>
+        <input type="submit" class="signIn" value="Sign in">
+
+        <a href="#" class="signUpNow">Sign up now</a>
+
+    </div>
+    <div class="profile hide">
+
+        <img src="./image/men.png" alt="" class="foto">
+        <p class="profileName">Ivan Ivanow</p>
+        <p class="profileEmails">ddd@o.dd</p>
+        <p class="profileJob">Web developer</p>
+
+        <input type="button" class="profileSignUp" value="Sign up">
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
